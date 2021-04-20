@@ -16,9 +16,9 @@ from tensorpack.tfutils.scope_utils import auto_reuse_variable_scope
 
 slim = tf.contrib.slim
 
-tf.flags.DEFINE_string('checkpoint_path', '/home/chengyaya/data/Patch-wise-iterative-attack-master/models', 'Path to checkpoint for inception network.')
-tf.flags.DEFINE_string('input_csv', '/home/chengyaya/attack/no_sign_attack/dataset/dev_dataset.csv', 'Input directory with images.')
-tf.flags.DEFINE_string('input_dir', '/home/chengyaya/attack/no_sign_attack/dataset/images', 'Input directory with images.')
+tf.flags.DEFINE_string('checkpoint_path', '/models', 'Path to checkpoint for inception network.')
+tf.flags.DEFINE_string('input_csv', 'dataset/dev_dataset.csv', 'Input directory with images.')
+tf.flags.DEFINE_string('input_dir', 'dataset/images', 'Input directory with images.')
 tf.flags.DEFINE_float('max_epsilon', 16.0, 'Maximum size of adversarial perturbation.')
 tf.flags.DEFINE_integer('num_classes', 1001, 'Maximum size of adversarial perturbation.')
 tf.flags.DEFINE_integer('num_iter', 10, 'Number of iterations.')
